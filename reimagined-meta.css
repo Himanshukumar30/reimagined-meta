@@ -1,0 +1,14 @@
+/* --------- Global Variables---------- */
+
+/* --------- Nav Bar ------------- */
+header img {
+  width: 80px;
+}
+
+ul li{
+  display:inline-flex;
+  list-style-type: none;
+  font-size: 14px;
+  justify-content: space-between;
+
+}
