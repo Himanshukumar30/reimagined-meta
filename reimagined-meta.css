@@ -1,14 +1,55 @@
 /* --------- Global Variables---------- */
+body {
+  font-family: 'Helvetica, Arial, sans-serif' ;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* --------- Nav Bar ------------- */
-header img {
+.header {
+  display: inline-flex;
+  /* font-family: 'Helvetica, Arial, sans-serif' ; */
+  background: #FBFEF9;
+  padding: 0.4%;
+  
+}
+
+.header img {
   width: 80px;
 }
 
 ul li{
   display:inline-flex;
   list-style-type: none;
-  font-size: 14px;
-  justify-content: space-between;
+  font-size: 16px;
+}
+
+nav {
+  display: inline-flex;
+  width: 100%;
+  justify-content: end;
+  padding: 0.4%;
+  
+
+}
+
+/* -------------- Header Image ------------- */
+
+.discover {
+  background-image: url("Videos/Digital-connection.gif");
+ 
+ /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20%;
+  text-align: left;
+  font-size: 20px;
+  line-height: 170%;
+  padding-left: 4%;
+  color: #FBFEF9;
 
 }
