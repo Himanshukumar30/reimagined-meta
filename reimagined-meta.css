@@ -1,6 +1,6 @@
 /* --------- Global Variables---------- */
 body {
-  font-family: 'Helvetica, Arial, sans-serif' ;
+  font-family: "Helvetica, Arial, sans-serif";
 }
 
 a {
@@ -12,17 +12,16 @@ a {
 .header {
   display: inline-flex;
   /* font-family: 'Helvetica, Arial, sans-serif' ; */
-  background: #FBFEF9;
+  background: #fbfef9;
   padding: 0.4%;
-  
 }
 
 .header img {
   width: 80px;
 }
 
-ul li{
-  display:inline-flex;
+ul li {
+  display: inline-flex;
   list-style-type: none;
   font-size: 16px;
 }
@@ -32,16 +31,12 @@ nav {
   width: 100%;
   justify-content: end;
   padding: 0.4%;
-  
-
 }
 
 /* -------------- Header Image ------------- */
 
 .discover {
   background-image: url("Videos/Digital-connection.gif");
- 
- /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,6 +45,62 @@ nav {
   font-size: 20px;
   line-height: 170%;
   padding-left: 4%;
-  color: #FBFEF9;
+  color: #fbfef9;
+}
 
+/* ----------------- Product section --------- */
+
+.shop {
+  /* display: block; */
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.shop p {
+  margin-left: 6%;
+  font-size: 16px;
+}
+
+.products {
+  display: inline-flex;
+  padding: 0%;
+  padding-bottom: 4%;
+}
+
+figure img {
+  max-width: 250px;
+  height: 200px;
+  /* margin: 10%; */
+}
+
+figure figcaption {
+  padding: 9%;
+  white-space: nowrap;
+  border-color: black;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.shop img {
+  width: 165px;
+  margin: 1px;
+}
+.message {
+  text-align: center;
+  /* width: 50%; */
+  padding: 10px;
+  margin: 10px;
+}
+
+.message h3 {
+  font-family: "Helvetica, Arial, sans-serif";
+  font: inherit;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.message p {
+  font-size: 15px;
+  line-height: 150%;
+  margin: 2px;
 }
