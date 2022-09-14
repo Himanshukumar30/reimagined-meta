@@ -79,8 +79,9 @@ nav {
 
 .shop {
   /* display: block; */
-  padding: 9%;
+  padding: 0.5%;
   padding-top: 1%;
+  padding-bottom: 8%;
 }
 
 .shop p {
@@ -95,8 +96,9 @@ nav {
 }
 
 .products figure img {
-  max-width: 250px;
-  height: 200px;
+  max-width: 233px;
+  height: 186px;
+  padding: 0%;
   /* margin: 10%; */
 }
 
@@ -218,6 +220,8 @@ width: 200px;
 
 .impact {
   padding: 8%;
+  padding-left: 0%;
+  padding-right: 0%;
   text-align: center;
 }
 
@@ -229,5 +233,18 @@ width: 200px;
   font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 125%;
 }
+
+.image-container {
+  display: inline-flex;
+  padding: 3%;
+  width:max-content;
+}
+
+.image-container img {
+  width: 410px;
+  height: 512px;
+}
+
+
