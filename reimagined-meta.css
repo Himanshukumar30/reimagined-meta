@@ -460,3 +460,19 @@ line-height: 200%;
   font-weight:lighter;
   letter-spacing: 120%;
 }
+
+/* -------------- Footer -------------- */
+
+footer {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  display: inline-flex;
+  margin: 0 2%;
+  font-size: 70%;
+  padding: 1.5% 0%;
+  width: 70%;
+}
+
+footer a {
+  margin: 0% 2%;
+
+}
