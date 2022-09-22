@@ -276,29 +276,26 @@ width: 200px;
 
 .image-container {
   display: inline-flex;
-  padding: 3%;
-  width:max-content;
+  padding-bottom: 8%;
+  font-family: "Helvetica, Arial, sans-serif";
 }
 
-.image-container img {
+/* .image-container img {
   width: 410px;
   height: 512px;
+  margin: 2%;
+} */
+
+.image-container img {
+  width: 90%;
+  height: 80%;
 }
 
-.image-container figcaption {
-  text-align: center;
-  width:410px;
-  padding: 3%;
-}
-
-figcaption p1 {
+.image-container a p1,p3 {
+  font-family: "Helvetica, Arial, sans-serif";
   display: block;
-}
-
-figcaption p3 {
-display: block;
-text-align: center;
-padding-top: 3%;
+  width: 300px; 
+  text-align: center;
 }
 
 
@@ -397,11 +394,6 @@ padding-top: 3%;
 
 .news-container {
   display: inline-flex;
-}
-
-article {
-  width: 336px;
-  padding-left: 25px;
 }
 
 .news-container a {
