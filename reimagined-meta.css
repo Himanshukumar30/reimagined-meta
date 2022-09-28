@@ -49,6 +49,7 @@ h1 {
   letter-spacing: 0.02em;
   width: 50%;
   margin: auto;
+  max-width: 100%;
 }
 
 h5 {
@@ -57,12 +58,27 @@ h5 {
   font-weight: 500;
   font-style: bold;
   width: 110%;
-  margin: 0%;
 }
 
 hr {
 width: 90%;
 }
+
+.html {
+  width: 2000%;
+}
+
+/* img {
+  max-width: 100%;
+} */
+/* 
+HTML {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+} */
 
 /* --------- Nav Bar ------------- */
 .header {
@@ -93,12 +109,8 @@ nav {
 
 .discover {
   background-image: url("Videos/Digital-connection.gif");
-  
-   /* Full height */
-   height: 100%;
-
-   /* Center and scale the image nicely */
-   background-position: center;
+   max-height: 120%;
+   max-width: 140%;
    background-repeat: no-repeat;
    background-size: cover;
   padding: 30%;
@@ -125,7 +137,7 @@ nav {
 
 
 
-/* -----------30---- Product section --------- */
+/* ------------ Product section --------- */
 
 .shop {
   /* display: block; */
@@ -142,11 +154,12 @@ nav {
   display: inline-flex;
   padding: 0%;
   padding-bottom: 4%;
+  max-width: 100%;
 }
 
 .products figure img {
-  max-width: 233px;
-  height: 186px;
+  max-width: 100%;
+  max-height: 70%;
   padding: 0%;
   /* margin: 10%; */
 }
@@ -166,6 +179,7 @@ figure figcaption {
 .message {
 text-align: center;
   width: 50%;
+  max-width: 100%;
   padding: 10px;
   margin: 0 25%;
 }
@@ -221,7 +235,6 @@ height: 130%;
 
 .news {
   display: inline-flex;
-  width: 100%;
   font-size: 120%;
 }
 
@@ -245,21 +258,19 @@ text-align: left;
 .news figure1 {
   display: inline-flex;
   background-color: white;
-justify-items:start;
   padding: 0.5%;
   padding-right: 30%;
   margin: 2%;
-  width: 7em;
+  max-width: 50%;
   height: 7em;
   
 }
 
 .news figcaption {
   font-size: 75%;
-display: inline-flex;
 padding: 10%;
 text-align: left;
-width: 200px;
+width: 200%;
 }
 
 
@@ -270,6 +281,7 @@ width: 200px;
   padding-left: 0%;
   padding-right: 0%;
   text-align: center;
+  max-width: 100%;
 }
 
 .community {
@@ -475,4 +487,99 @@ footer {
 footer a {
   margin: 0% 2%;
 
+}
+
+/* ------------ Responsive layout ---------- */
+
+
+/* ----- Smaller screens ----- */
+
+@media screen and (max-width: 400px) {
+
+  body{
+
+    width: 100%;
+  }
+
+  p1, p2{
+    font-size: 150%;
+  }
+
+  .discover {
+    width: 180%;
+  }
+
+  .products {
+    padding-bottom: 10%;
+  }
+
+  .products figure img {
+    height: 100%;
+  }
+
+  /* figure figcaption {
+    font-size: 190%;
+  } */
+  
+  .message {
+    width: 260%;
+    padding-left: 20%;
+  }
+
+  .message h3, p {
+    font-size: 230%;
+  }
+
+.technology {
+  width: 230%;
+  padding-top: 10%;
+  padding-left: 0%;
+}
+
+.technology figure img {
+  width: 100%;
+}
+
+.news {
+  display: block;
+  width: 100%;
+}
+
+.latest figure1 {
+  width: 200%;
+}
+
+.news figure1 figcaption {
+  font-size: 150%;
+  padding: 0%;
+  padding-left: 10%;
+padding-top: 7%;
+width: 100%;
+}
+
+  
+
+/* .image-container {
+  padding: 10%;
+  padding-bottom: 30%;
+} */
+
+
+.products {
+  display: block;
+  padding: 0%;
+  padding-bottom: 4%;
+  max-width: 100%;
+}
+
+.products figure img {
+  max-width: 100%;
+  max-height: 70%;
+  padding: 0% 50%;
+}
+
+.products figure figcaption {
+  padding: 0% 70%;
+  font-size: 150%;
+}
 }
