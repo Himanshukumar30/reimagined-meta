@@ -205,7 +205,9 @@ text-align: center;
 .technology {
   background-color: #f2f4f7;
   padding: 8%;
+  padding-bottom: 4%;
   text-align: center;
+  max-width: 100%;
 }
 
 /* .technology h1 {
@@ -227,6 +229,7 @@ height: 130%;
 .latest {
   display: block;
   padding: 3%;
+  max-width: 100%;
 }
 
 .latest p {
@@ -236,41 +239,38 @@ height: 130%;
 .news {
   display: inline-flex;
   font-size: 120%;
+
 }
 
-/* .news figure1 img {
-width: 7em;
-height: 6.9em;
-text-align: left;
 
-} */
-
-/* .news1, .news2 {
+.news a {
+width: 100%;
+}
+.news1 a {
   display: inline-flex;
   background-color: white;
-text-align: left;
-  padding: 60px;
-  margin: 2%;
-  width: 20em;
-  height: 1em;
-} */
-
-.news figure1 {
-  display: inline-flex;
-  background-color: white;
-  padding: 0.5%;
-  padding-right: 30%;
-  margin: 2%;
-  max-width: 50%;
-  height: 7em;
-  
+  padding: 1%;
+  max-width: 90%;
 }
 
-.news figcaption {
-  font-size: 75%;
-padding: 10%;
-text-align: left;
-width: 200%;
+.news2 a {
+  display: inline-flex;
+  background-color: white;
+  padding: 1%;
+  max-width: 100%;
+}
+
+
+.news p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.news img {
+  width: 50%;
+  height: 10%;
 }
 
 
@@ -510,16 +510,22 @@ footer a {
   }
 
   .products {
-    padding-bottom: 10%;
+    display: block;
+    padding: 0%;
+    padding-bottom: 4%;
+    max-width: 100%;
   }
-
+  
   .products figure img {
-    height: 100%;
+    max-width: 100%;
+    max-height: 70%;
+    padding: 2% 50%;
   }
-
-  /* figure figcaption {
-    font-size: 190%;
-  } */
+  
+  .products figure figcaption {
+    padding: 0% 70%;
+    font-size: 150%;
+  }
   
   .message {
     width: 260%;
@@ -565,21 +571,5 @@ width: 100%;
 } */
 
 
-.products {
-  display: block;
-  padding: 0%;
-  padding-bottom: 4%;
-  max-width: 100%;
-}
 
-.products figure img {
-  max-width: 100%;
-  max-height: 70%;
-  padding: 0% 50%;
-}
-
-.products figure figcaption {
-  padding: 0% 70%;
-  font-size: 150%;
-}
 }
