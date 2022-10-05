@@ -1,6 +1,8 @@
 /* --------- Global Variables---------- */
 body {
   font-family: "Helvetica, Arial, sans-serif";
+  width: 100%;
+  height: 100%;
 }
 
 a{
@@ -86,6 +88,7 @@ HTML {
   /* font-family: 'Helvetica, Arial, sans-serif' ; */
   background: #fbfef9;
   padding: 0.4%;
+  width: 100%;
 }
 
 .header img {
@@ -141,64 +144,66 @@ nav {
 
 .shop {
   /* display: block; */
-  padding: 0.5%;
-  padding-top: 1%;
-  padding-bottom: 8%;
+  padding: 0 1%;
 }
 
-.shop p{
-  text-align: center;
+.top {
+  padding-top: 6%;
 }
 
 .products {
-  display: inline-flex;
-  padding: 0%;
-  padding-bottom: 4%;
+  display: flex;
+  flex-direction: row;
   max-width: 100%;
 }
 
-.products figure img {
+.product {
+  padding: 0 1.5%;
+  margin-top: 1.5%;
+  width: 90%;
   max-width: 100%;
-  max-height: 70%;
-  padding: 0%;
-  /* margin: 10%; */
 }
 
-figure figcaption {
-  padding: 9%;
+.product p{
+  padding: 0%;
   white-space: nowrap;
-  border-color: black;
-  text-align: left;
-  padding-left: 2%;
+  /* padding-left: 2%; */
 }
 
-.shop img {
-  width: 165px;
-  margin: 1px;
-}
 .message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 text-align: center;
-  width: 50%;
+  width: 100%;
   max-width: 100%;
-  padding: 10px;
-  margin: 0 25%;
+  margin:  5% 0;
+  margin-right: 0%;
+}
+
+.message img {
+align-self:center;
+  width: 165px;
 }
 
 .message h3 {
   font-family: "Helvetica, Arial, sans-serif";
   font: inherit;
   font-size: 25px;
-  margin: 0 1%;
   line-height: 120%;
-
+  margin: 0%;
+  width: 60%;
 }
 
 .message p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 150%;
-  margin: 2px;
   color: grey;
+  margin: 0%;
+  padding: 0%;
+  width: 60%;
   font-weight: lighter;
+  text-align: center;
 }
 
 /* -------------------- Technologies section --------------------- */
@@ -494,11 +499,14 @@ footer a {
 
 /* ----- Smaller screens ----- */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
 
-  body{
-
+  /* main {
     width: 100%;
+  } */
+  
+  body{
+width: 200%;
   }
 
   p1, p2{
@@ -506,25 +514,30 @@ footer a {
   }
 
   .discover {
-    width: 180%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
   }
 
   .products {
     display: block;
     padding: 0%;
+    padding-top: 2%;
     padding-bottom: 4%;
     max-width: 100%;
+    /* overflow:auto; */
   }
   
   .products figure img {
     max-width: 100%;
     max-height: 70%;
-    padding: 2% 50%;
+    padding: 2% 20%;
   }
   
   .products figure figcaption {
-    padding: 0% 70%;
-    font-size: 150%;
+    padding: 0% 30%;
+    text-align: center;
+    font-size: 290%;
   }
   
   .message {
@@ -537,7 +550,7 @@ footer a {
   }
 
 .technology {
-  width: 230%;
+  width: 100%;
   padding-top: 10%;
   padding-left: 0%;
 }
@@ -551,11 +564,8 @@ footer a {
   width: 100%;
 }
 
-.latest figure1 {
-  width: 200%;
-}
 
-.news figure1 figcaption {
+.news1 a {
   font-size: 150%;
   padding: 0%;
   padding-left: 10%;
@@ -573,3 +583,14 @@ width: 100%;
 
 
 }
+
+
+/* Break points:
+max-width: 767px
+max-width: 445px
+min-width: 768 px and max-width: 1024 px
+
+
+
+
+*/
